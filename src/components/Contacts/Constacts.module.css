@@ -1,0 +1,64 @@
+.title {
+  color: #3f51b5;
+}
+
+.links {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.links__item {
+  margin: 0 5px 5px 0;
+  transition: all ease .3s;
+}
+
+.links__item:hover {
+  transform: scale(.9);
+  opacity: .8;
+}
+
+.links__item:active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background: url('./img/avatar.png');
+  background-size: cover;
+  margin: 0 10px 0 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #3f51b5;
+}
+
+.about__name_title,
+.about__age_title,
+.about__city_title {
+  font-weight: 600;
+}
+
+.about__name,
+.about__age,
+.about__city {
+  font-style: italic;
+}
+
+@media (max-width: 400px) {
+  .links {
+    justify-content: center;
+  }
+}

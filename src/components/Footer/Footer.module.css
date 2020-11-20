@@ -1,0 +1,27 @@
+.footer {
+  font-weight: bold;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.count {
+  color: #3f51b5;
+}
+
+.count span {
+  color: red;
+}
+
+@media (max-width: 380px) {
+  .filter {
+    flex-direction: column;
+  }
+
+  .filter button {
+    margin-bottom: 10px;
+  }
+}

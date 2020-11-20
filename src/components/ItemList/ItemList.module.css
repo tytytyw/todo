@@ -1,0 +1,27 @@
+.item {
+  position: relative;
+}
+
+.list {
+  font-style: italic;
+}
+
+button.delete {
+  background: url('./img/delete.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .3;
+  transition: opacity .4s ease;
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 14px);
+}
+
+.delete:hover {
+  opacity: 1;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}

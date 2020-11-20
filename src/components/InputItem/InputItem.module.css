@@ -1,0 +1,44 @@
+.add_task form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add_task button {
+  align-self: flex-end;
+}
+
+.add_task > div {
+  margin-right: 20px;
+}
+
+.add_task {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.add_task::before {
+  position: absolute;
+  content: 'Введите название задачи';
+  color: red;
+  left: 90px;
+  top: -10px;
+  display: none;
+}
+
+input {
+  animation-iteration-count: 1 !important;
+}
+
+.error {
+  color: red;
+  background-color: pink;
+  position: relative;
+  padding: 4px 6px;
+}
+
+.error::after {
+  content: '\2639';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
